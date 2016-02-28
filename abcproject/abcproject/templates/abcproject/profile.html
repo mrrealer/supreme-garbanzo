@@ -1,0 +1,12 @@
+<h1>Create a profile</h1>
+
+<form action="/profile/" method="post">
+    {% csrf_token %}
+    <label for="int">Interests: </label>
+    <textarea rows='20' cols='40' type='text' name='interests' id='int' size='40'/>
+</textarea>
+<br>
+    <label for="pic">Link to a profile photo: </label>
+    <input type='url' name="picture" id="pic"/>
+    <input type='submit' name="Submit" value="submit"/>
+</form>
